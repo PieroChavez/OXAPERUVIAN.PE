@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/oxaperuvian.com/public_html/
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/casaldaba/public_html/
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPLOYPATH
