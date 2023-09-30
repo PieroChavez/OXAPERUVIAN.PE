@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/oxaperuvian.pe/public_html/
+    - export DEPLOYPATH=/home/oxaperuvian.com/public_html/
     - /bin/cp -R images $DEPLOYPATH
