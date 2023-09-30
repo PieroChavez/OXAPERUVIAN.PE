@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/Piero-Chavez/public_html/
-    - /bin/cp index.html $DEPLOYPATH
+    - /bin/rsync -av public/ $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
