@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="{{ asset('https://th.bing.com/th/id/OIP.c_xwjQ9C6RPj8MLMx28QtgHaHa?pid=ImgDet&rs=1') }}"> 
 
 
-
+          <!-- ESTOOOOOOOOOOO ES UN COMENTARIO --> 
 
 </head>
 <body>
