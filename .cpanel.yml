@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/casaldabab/public_html/
+    - export DEPLOYPATH=/home/casaldaba/public_html/
     - /bin/rsync -a --exclude 'index.php' public/ $DEPLOYPATH
