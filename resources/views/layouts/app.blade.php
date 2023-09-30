@@ -6,7 +6,7 @@
     <title>Tu Sitio Web</title>
     <link rel="stylesheet" href="{{asset('css/welcome.css')}}"> <!-- Asegúrate de que la ruta del archivo CSS sea correcta -->
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/png" href="{{ asset('https://th.bing.com/th/id/OIP.c_xwjQ9C6RPj8MLMx28QtgHaHa?pid=ImgDet&rs=1') }}"> 
 
 
 
@@ -15,8 +15,12 @@
 <body>
     
   <header class="">
+    <div class="logo">
+      <img src="{{ asset('https://th.bing.com/th/id/OIP.c_xwjQ9C6RPj8MLMx28QtgHaHa?pid=ImgDet&rs=1') }}" alt="Logo de la aplicación">
+      <h1>oxaperuvian</h1>
+  </div>
     <nav>
-      <span>oxaperuvian</span>
+      
       <ul>
         <li>Cafeterias</li>
         <li>Hoteles</li>        
