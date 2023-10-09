@@ -153,7 +153,15 @@
 
 
 
-
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt incidunt voluptatibus veniam reiciendis similique sint esse possimus suscipit corrupti rem unde excepturi quaerat consequuntur voluptatum, magnam quisquam id pariatur.</p>
+    <ul>
+        <li> <p>mas de uno en un afamili hace lo que se puede hca</p></li>
+        <li> <p>lo que sugiere la metodolopgia de aprendiza es 2que cada uno de lo que puede se apache_child_terminate</p> </li>
+        <li> <p>tener escrito lo puedo hacer mas no queirp</p><p>no solo es lo que uno quiere mas lo que se requiere es lo que uno puede hacer asi como </p></li>
+        <li> oe que fue como es eso la</li>
+    </ul>
+</section>
 
 
 
