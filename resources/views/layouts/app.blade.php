@@ -1,69 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Sitio Web</title>
-    <link rel="stylesheet" href="{{asset('css/welcome.css')}}"> <!-- Asegúrate de que la ruta del archivo CSS sea correcta -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="{{ asset('https://th.bing.com/th/id/OIP.c_xwjQ9C6RPj8MLMx28QtgHaHa?pid=ImgDet&rs=1') }}"> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-          <!-- ESTOOOOOOOOOOO ES UN COMENTARIO --> 
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="welcome.css">
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    
-  <header class="">
-    <div class="logo">
-      <img src="{{ asset('https://th.bing.com/th/id/OIP.c_xwjQ9C6RPj8MLMx28QtgHaHa?pid=ImgDet&rs=1') }}" alt="Logo de la aplicación">
-      <h1>oxaperuvian</h1>
-  </div>
-    <nav>
-      
-      <ul>
-        <li>Cafeterias</li>
-        <li>Hoteles</li>        
-        <li>restaurantes</li>
-        <li>Tours</li>
-        <div class="login-section">
-          <a href="/iniciar-sesion">Iniciar Sesión</a>
-      </div>
-      </ul>
-    </nav>
-  </header>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
 
+                    </ul>
 
-  
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
 
-      
-    <main>
-        @yield('content') <!-- Aquí se incluirá el contenido de cada vista -->
-    </main>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
 
-<!-- Agrega esto al final del archivo `welcome.blade.php` antes del cierre de `</body>` -->
-<div class="whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=+51 996 372 728" target="_blank">
-        <img src="https://th.bing.com/th/id/R.f5a344f6f4d887788de101a8a6fbc55e?rik=HmE275GCK4VCdg&pid=ImgRaw&r=0" alt="WhatsApp">
-        <div class="message">Escríbenos</div>
-    </a>
-</div>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
 
-<footer>
-    <nav>
-    <ul>
-      <li>cafeterias de especialidad</li>
-    <li>torneos de baristas</li>
-    <li>marcas de cafés</li>
-    <li>restauranes</li>
-   
-    </ul>
-  </nav>
-     
-  <p>&copy; {{ date('Y') }} Barista Estudios</p>
-</footer>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
 </body>
 </html>
