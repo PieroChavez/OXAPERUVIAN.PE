@@ -23,8 +23,17 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    OXAPERUVIAN
+
+                  <!--  aqui podemos hacer o subior la imagen por el logo de lo contrario solo aparecera LARAVEL
+                <img src="{{ asset('https://1.bp.blogspot.com/-bDwtY49prms/VQmyXL7xzyI/AAAAAAAAAsw/DdNt6I-Qvv4/s1600/Escudo%2Bde%2BOxapampa.png') }}" alt="Logo de Mi Proyecto">
+
+                 -->
+
+
                 </a>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -165,7 +174,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2023, ABARISTA ESTUDIOS <a href="https://instagram/barista_estudios/">instagram</a></p>
+                            <p>Copyright &copy; 2023, BARISTA ESTUDIOS <a href="https://instagram/barista_estudios/"></a></p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
