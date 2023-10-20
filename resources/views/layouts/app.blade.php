@@ -79,7 +79,7 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
+                </div> 
             </div>
         </nav>
 
@@ -113,7 +113,7 @@
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Contacto</h4>
-                                <span>945848943/span>
+                                <span>945848943 </span>
                             </div>
                         </div>
                     </div>
@@ -133,14 +133,13 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://1.bp.blogspot.com/-bDwtY49prms/VQmyXL7xzyI/AAAAAAAAAsw/DdNt6I-Qvv4/s1600/Escudo%2Bde%2BOxapampa.png" class="img-fluid" alt="logo"></a>
+                                <a href="" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p>Lideres en el mercado local e internacional</p>
                             </div>
                             <div class="footer-social-icon">
-                                <span>Follow us</span>
+                                <span>SIGUENOS</span>
                                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
@@ -180,11 +179,11 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Nosotros</a></li>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Politica</a></li>
+                                <li><a href="#">Contacto</a></li>
                             </ul>
                         </div>
                     </div>

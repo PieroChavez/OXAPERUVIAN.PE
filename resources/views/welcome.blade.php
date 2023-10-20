@@ -30,8 +30,27 @@
       </main>
         <a href="/productos" class="button-link">Ver Productos</a>
     </div>
-    <img src="{{ asset('https://th.bing.com/th/id/R.477270a9b4c685e7564fd3590047edb3?rik=FgDiSjbD%2bXR93w&riu=http%3a%2f%2fcinnamonstyle.pe%2fwp-content%2fuploads%2f2018%2f01%2fportal-oxapampa.jpg&ehk=S09gwGIyGcCx%2fshIpYF7kQphTQfGOIjR8AvS8Czs6RE%3d&risl=&pid=ImgRaw&r=0') }}" alt="Portada" class="background-image">
+    <img src="{{ asset('https://ichef.bbci.co.uk/news/800/cpsprodpb/CFCF/production/_127899135_pozuzo-aereo.png') }}" alt="Portada" class="background-image">
 </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <main>
     <section class="recommendations">
@@ -154,15 +173,6 @@
 
 
 
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt incidunt voluptatibus veniam reiciendis similique sint esse possimus suscipit corrupti rem unde excepturi quaerat consequuntur voluptatum, magnam quisquam id pariatur.</p>
-    <ul>
-        <li> <p>mas de uno en un afamili hace lo que se puede hca</p></li>
-        <li> <p>lo que sugiere la metodolopgia de aprendiza es 2que cada uno de lo que puede se apache_child_terminate</p> </li>
-        <li> <p>tener escrito lo puedo hacer mas no queirp</p><p>no solo es lo que uno quiere mas lo que se requiere es lo que uno puede hacer asi como </p></li>
-        <li> oe que fue como es eso la</li>
-    </ul>
-</section>
 
 
 

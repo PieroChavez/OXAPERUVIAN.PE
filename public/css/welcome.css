@@ -225,11 +225,6 @@ main {
 
 
 
-
-
-
-
-
 /* Estilos para la sección de recomendaciones */
 .recommendations {
     text-align: center;
@@ -279,8 +274,6 @@ main {
 .recommendation a:hover {
     color: #555;
 }
-
-
 
 
 
