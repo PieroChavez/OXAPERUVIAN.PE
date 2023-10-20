@@ -30,7 +30,7 @@
       </main>
         <a href="/productos" class="button-link">Ver Productos</a>
     </div>
-    <img src="{{ asset('https://ichef.bbci.co.uk/news/800/cpsprodpb/CFCF/production/_127899135_pozuzo-aereo.png') }}" alt="Portada" class="background-image">
+    <img src="{{ asset('https://th.bing.com/th/id/R.b72b62241f471c1b64748868ca90d0bc?rik=iGVr4%2b%2fkv6itBg&riu=http%3a%2f%2fwww.eltiempo.com%2fcontenido%2fmultimedia%2ffotos%2fciencia%2fIMAGEN%2fIMAGEN-16639585-2.png&ehk=xnkinNJXwDYIxAo%2bienp3tI%2fWTdCvQ9efW5CrrpqGF8%3d&risl=&pid=ImgRaw&r=0') }}" alt="Portada" class="background-image">
 </div>
 
 
