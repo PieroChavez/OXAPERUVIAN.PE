@@ -1,183 +1,56 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header ul li:hover {
-    font-weight:bold;
-    
-  }
-  
-  header ul li, .busqueda img {
-    cursor:pointer;
-    
-    
-  }
-  
-  .busqueda img {
-    width:1.5rem;
-    position:relative;
-    
-    
-    top: 0.5rem;
-  
-  }
- 
-  ul {
-    padding: 0;
-    list-style:none;
-    margin: 0 auto;
-    max-width:500px;
-    display:flex;
-    justify-content: space-around;
-    font-family:arial;
-    font-size:0.8rem;
-    position:relative;
-  }
-  
-
-  
-  ul li {
-    cursor:hand;
-  }
-
- 
-  .busqueda {
-    max-width:650px;
-    margin: 0 auto;
-  }
-  
-  .busqueda a {
-    display:block;
-    text-align:center;
-    text-decoration:none;
-    font-family:arial;
-    color:black;
-    margin-top:1rem;
-  }
-  
-  .busqueda a:hover {
-    font-weight:bold;
-  }
-  
-  .busqueda input {
-    width:610px;
-    height:25px;
-  
-  }
-  
- 
-  
-  main {
-    margin-top:3rem;
-  }
-
-  #ocultar p {
-    text-align:center;
-    font-family: arial;
-  }
-  
-
-
-
-/* Estilos para la Portada */
-.cover-container {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Ajusta la altura de la portada según tus necesidades */
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body{
+  background-color: white;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-    z-index: -1;
+.main-welcome {
+  text-align: center;
+  padding: 50px;
 }
 
-/* Estilos para el Texto en la Portada */
-
-
-.cover-text h1 {
-    font-size: 36px;
-    margin: 0;
+.h1-welcome {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-.cover-text p {
-    font-size: 18px;
-    margin: 10px 0;
+.search {
+  display: flex;
+  justify-content: center;
 }
 
-.button-link {
-    background-color: #D38366;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.searchTerm {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1em;
 }
 
-.button-link:hover {
-    background-color: #922F16;
+.searchButton {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  font-size: 1em;
 }
 
 
 
-/* Estilos del encabezado */
-header {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-}
 
-/* Estilos de la sección de inicio de sesión */
-.login-section {
-    float: right; /* Alinea a la derecha del encabezado */
-    margin-top: 10px; /* Añade un poco de espacio desde la parte superior del encabezado */
-}
 
-.login-section a {
-    color: #000000; /* Color del texto para el enlace */
-    text-decoration: none; /* Elimina la subraya del enlace */
-    padding: 5px 10px; /* Espaciado interno del enlace */
-    border: 1px solid #000000; /* Borde alrededor del enlace */
-    border-radius: 5px; /* Esquinas redondeadas */
-}
 
-.login-section a:hover {
-    background-color: #fff; /* Cambia el fondo en el hover */
-    color: #333; /* Cambia el color del texto en el hover */
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -299,9 +172,43 @@ main {
 
 
 
+.portadawelcome {
+  position: absolute;
+}
 
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+}
 
+.carrusel-item {
+  display: none;
+  width: 100%;
+  height: 400px; /* Altura de cada imagen del carrusel */
+  position: absolute;
+  animation: cambioImagen 6s infinite; /* Animación para cambiar de imagen cada 6 segundos */
+}
 
+.carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el objeto de ajuste para cubrir completamente el contenedor */
+}
+
+.carrusel-item:first-child {
+  display: block; /* Muestra la primera imagen al cargar la página */
+}
+
+@keyframes cambioImagen {
+  0%, 16.666%, 100% {
+      opacity: 0; /* Imágenes en los extremos de la animación están completamente transparentes */
+      z-index: 1; /* Se colocan detrás de las imágenes visibles */
+  }
+  20%, 80% {
+      opacity: 1; /* Imágenes principales con opacidad completa */
+      z-index: 2; /* Se colocan encima de las imágenes transparentes */
+  }
+}
 
 
 

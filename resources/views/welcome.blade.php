@@ -12,28 +12,30 @@
 
 
 
-<div class="cover-container">
-    <div class="cover-text">
-        <h1>TODO EN OXAPAMPA</h1>
-        <p>Explora nuestras increíbles ofertas y productos de alta calidad.</p>
-           
-    <main>
-        <div class="contenedor">
-          <div class="busqueda">
-            <input name="serach" id="search" type="text" />
-            <img id="buscar" class="lupa" src="https://images.vexels.com/media/users/3/140723/isolated/preview/158241d2079a635fb0cae49accb56da5-icono-de-la-lupa-by-vexels.png" />
-            
-          </div>
-          <div class="contenedorLogo">
-          </div>
-        </div>
-      </main>
-        <a href="/productos" class="button-link">Ver Productos</a>
+
+<main class="main-welcome">
+    <h1 class="h1-welcome">¿Adónde vamos hoy?</h1>
+    <div class="search">
+        <input type="text" class="searchTerm" placeholder="¿Qué estás buscando?">
+        <button type="button" class="searchButton">
+            Buscar
+        </button>
     </div>
-    <img src="{{ asset('https://th.bing.com/th/id/R.b72b62241f471c1b64748868ca90d0bc?rik=iGVr4%2b%2fkv6itBg&riu=http%3a%2f%2fwww.eltiempo.com%2fcontenido%2fmultimedia%2ffotos%2fciencia%2fIMAGEN%2fIMAGEN-16639585-2.png&ehk=xnkinNJXwDYIxAo%2bienp3tI%2fWTdCvQ9efW5CrrpqGF8%3d&risl=&pid=ImgRaw&r=0') }}" alt="Portada" class="background-image">
-</div>
+</main>
 
 
+        <!-- Carrusel de Portada -->
+        <div id="portadaCarrusel" class="carrusel">
+            <div class="carrusel-item">
+                <img src="https://th.bing.com/th/id/R.fc3daaaf6a0962c97bc3b2eecf951512?rik=WswzcFEFuxj0WQ&pid=ImgRaw&r=0" alt="Imagen 1">
+            </div>
+            <div class="carrusel-item">
+                <img src="https://amagecafe.com/wp-content/uploads/2022/04/IMG_8260-1-2.jpg" alt="Imagen 2">
+            </div>
+            <div class="carrusel-item">
+                <img src="https://th.bing.com/th/id/R.4cb3e39dc4f5465f0ea542d2f52167c0?rik=Aw07LzJCTMourw&riu=http%3a%2f%2fwww.bitacorarevista.com%2fweb%2fwp-content%2fuploads%2fMG_4703.jpg&ehk=cBtAfaQzDF0PHfW94buiMPtMZvnUWo2x%2fJY7b%2f1exF0%3d&risl=&pid=ImgRaw&r=0 alt="Imagen 3">
+            </div>
+        </div>
 
 
 
@@ -41,7 +43,11 @@
 
     
 
-
+        <div class="whatsapp-button">
+            <a href="https://api.whatsapp.com/send?phone=51945848943" target="_blank" rel="noopener noreferrer">
+                <img src="" alt="WhatsApp">
+            </a>
+        </div>
 
 
 
