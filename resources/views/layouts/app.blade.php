@@ -78,6 +78,21 @@
                                 </div>
                             </li>
                         @endguest
+                        <!-- En tu plantilla de barra de navegación (por ejemplo, resources/views/layouts/app.blade.php) -->
+
+                            @if(Auth::check())
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        cerrar sesion
+                                    </a>
+                                </li>
+                            </ul>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                            @endif
+
                     </ul>
                 </div> 
             </div>
@@ -87,6 +102,7 @@
             @yield('content')
         </main>
     </div>
+
 
 
 
