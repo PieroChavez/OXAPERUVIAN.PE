@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    OXAPERUVIAN
+                    BARISTAS.PE
 
                   <!--  aqui podemos hacer o subior la imagen por el logo de lo contrario solo aparecera LARAVEL
                 <img src="{{ asset('https://1.bp.blogspot.com/-bDwtY49prms/VQmyXL7xzyI/AAAAAAAAAsw/DdNt6I-Qvv4/s1600/Escudo%2Bde%2BOxapampa.png') }}" alt="Logo de Mi Proyecto">
@@ -119,10 +119,11 @@
                         <div class="footer-menu">
                             <ul>
                                 <li><a href="#">Inicio</a></li>
-                                <li><a href="#">Nosotros</a></li>
+                                <li><a href="#">nosotros</a></li>
                                 <li><a href="#">Privacidad</a></li>
                                 <li><a href="#">Politica</a></li>
                                 <li><a href="#">Contacto</a></li>
+                                
                             </ul>
                         </div>
                     </div>
